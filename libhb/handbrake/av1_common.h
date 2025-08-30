@@ -26,12 +26,12 @@ static const int          hb_av1_level_values[] = {
 
 static const char * const hb_av1_svt_preset_names[] =
 {
-    "10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0", "-1", NULL
+    "10", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0", "-1", "-2", "-3", NULL
 };
 
 static const char * const hb_av1_svt_tune_names[] =
 {
-    "vq", "psnr", "ssim", "fastdecode", NULL
+    "vq", "psnr", "ssim", "grain", "still picture", "fastdecode", NULL
 };
 
 static const char * const hb_av1_svt_profile_names[] =

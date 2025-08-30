@@ -188,6 +188,14 @@ int encsvtInit(hb_work_object_t *w, hb_job_t *job)
     {
         param->tune = 2;
     }
+    else if (job->encoder_tune != NULL && strstr("grain", job->encoder_tune) != NULL)
+    {
+        param->tune = 3;
+    }
+    else if (job->encoder_tune != NULL && strstr("still picture", job->encoder_tune) != NULL)
+    {
+        param->tune = 4;
+    }
     else if (job->encoder_tune != NULL && strstr("psnr", job->encoder_tune) != NULL)
     {
         param->tune = 1;
